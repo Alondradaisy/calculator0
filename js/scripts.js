@@ -17,3 +17,10 @@
 // var tempC = parseInt(prompt("Enter Temp in Celsius"))
 // var result = fahrenheit(tempC)
 // alert(result)
+
+// var gallon = function(liter) {
+//   return liter/(3.78);
+// };
+// var liter = parseInt(prompt("inter volume in liters"))
+// var result = gallon(liter)
+// alert(result)
