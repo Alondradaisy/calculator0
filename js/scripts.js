@@ -30,4 +30,6 @@ $(document).ready(function() {
     $("#subtractOutput").text(result);
   });
   var dob = $("#born").val();
+  var beverage = parseInt($("#beverage").val());
+  var favoriteColor = $("#color").val();
 });
