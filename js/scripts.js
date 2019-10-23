@@ -1,26 +1,25 @@
-//
-// var divide = function(number1, number2) {
-//   return (number1/(number2*number2));
-// };
-//
-// var number1 = parseInt(prompt("Enter Weight (in lb):"));
-// var number2 = parseInt(prompt("Enter Height (in inches):"));
-// var result1 = divide(number1, number2);
-//
-// var result2 = result1*703
-// alert(result2);
+var add = function(number1, number2) {
+  return number1 + number2;
+};
 
+var subtract = function(number1, number2) {
+  return number1 - number2;
+};
 
-// var fahrenheit = function(tempC) {
-//   return ((tempC*(9/5))+32);
-// };
-// var tempC = parseInt(prompt("Enter Temp in Celsius"))
-// var result = fahrenheit(tempC)
-// alert(result)
+var multiply = function(number1, number2) {
+  return number1 * number2;
+};
 
-// var gallon = function(liter) {
-//   return liter/(3.78);
-// };
-// var liter = parseInt(prompt("inter volume in liters"))
-// var result = gallon(liter)
-// alert(result)
+var divide = function(number1, number2) {
+  return number1 / number2;
+};
+
+$(document).ready(function() {
+  $("form#add").submit(function(event) {
+    event.preventDefault();
+    var number1 = parseInt($("#add1").val());
+    var number2 = parseInt($("#add2").val());
+    var result = add(number1, number2);
+    $("#output").text(result);
+  });
+});
