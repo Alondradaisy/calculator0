@@ -29,4 +29,5 @@ $(document).ready(function() {
     var result = subtract(number1, number2);
     $("#subtractOutput").text(result);
   });
+  var dob = $("#born").val();
 });
